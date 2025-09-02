@@ -1,7 +1,7 @@
 USE world;
 show tables;
 describe  `country`;
-drop table `new_table`;
+
 CREATE TABLE `new_table` AS /* 將創建的表格變成新的 table*/
 select region,
        sum(population) as total_population,
